@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author osman
- *
- */
-module springIntro {
-}
