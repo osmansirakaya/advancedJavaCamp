@@ -1,6 +1,7 @@
 package springIntro;
 
-public class CustomerManager {
+public class CustomerManager implements ICustomerService{
+	
 	private ICustomerDal customerDal;
 	
 	public CustomerManager(ICustomerDal customerDal) { // referans type olduğu için ICustomerDal'ı implemente eden herkesi parametere olarak gönderebiliriz.
