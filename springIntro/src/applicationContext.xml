@@ -7,10 +7,11 @@
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
 	
-	<bean id="database" class="springIntro.MsSqlCustomerDal">
-	
+	<bean id="database" class="springIntro.MySqlCustomerDal">
+		<property name="connectiString" value="mysql string--"></property>	
 	</bean>
 	<bean id="service" class="springIntro.CustomerManager">
-		<constructor-arg ref="database"/>
+<!--	<constructor-arg ref="database"/> -->
+			<property name="customerDal" ref="database"></property>  <!-- property'lerden biri customerDal ise ona database'in referansını ver -->
 	</bean>
 </beans>
