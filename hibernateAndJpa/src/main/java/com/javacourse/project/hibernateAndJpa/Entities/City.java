@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class City {
 	@Id
 	@Column(name="ID")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.IDENTITY) // otomatik artacak 
 	private int id;
 	
 	@Column(name="name")
