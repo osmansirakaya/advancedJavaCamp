@@ -2,6 +2,8 @@ package com.javacourse.project.hibernateAndJpa.Entities;
 
 import javax.persistence.*;
 
+import org.yaml.snakeyaml.constructor.SafeConstructor.ConstructYamlBinary;
+
 @Entity
 @Table(name="city")
 public class City {
@@ -13,7 +15,7 @@ public class City {
 	@Column(name="name")
 	private String name;
 	
-	@Column(name="countryCode")
+	@Column(name="countrycode")
 	private String countryCode;
 	
 	@Column(name="district")
@@ -31,6 +33,8 @@ public class City {
 		this.population = population;
 	}
 
+	public City() {}
+	
 	public int getId() {
 		return id;
 	}
